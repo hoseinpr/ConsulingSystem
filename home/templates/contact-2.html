@@ -1,0 +1,237 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="{% static 'css/base.min.css' %}" />
+  <link rel="stylesheet" href="{% static 'css/choices.min.css' %}" />
+  <link rel="stylesheet" href="{% static 'css/all.min.css' %}"/>
+  <link rel="stylesheet" href="{% static 'vendor/leaflet/leaflet.css' %}"/>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="{% static 'css/vendors.css' %}">
+  <link rel="stylesheet" href="{% static 'css/main.css' %}">
+
+  <title>تماس با ما</title>
+</head>
+
+<body class="preloader-visible" data-barba="wrapper">
+  <!-- preloader start -->
+  <div class="preloader js-preloader">
+    <div class="preloader__bg"></div>
+  </div>
+  <!-- preloader end -->
+
+
+  <main class="main-content">
+
+    {% include "header.html" %}
+
+
+    <div class="content-wrapper  js-content-wrapper">
+
+      <section class="page-header -type-4 bg-beige-1">
+        <div class="container">
+          <div class="page-header__content">
+            <div class="row">
+              <div class="col-auto">
+                <div data-anim="slide-up delay-1">
+                  <h1 class="page-header__title ff-estedad">تماس با ما</h1>
+                </div>
+
+                <div data-anim="slide-up delay-2">
+                  <p class="page-header__text">ما ماموریت داریم دوره‌های جذاب و مدیریت‌شده را با قیمتی مناسب ارائه دهیم.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="layout-pt-md layout-pb-lg">
+        <div data-anim-wrap class="container">
+          <div class="row y-gap-50 justify-between">
+            <div class="col-xl-5 col-lg-6">
+              <h3 class="text-24 lh-1 fw-500 ff-estedad">آدرس دفاتر مرکزی</h3>
+              <div class="row y-gap-30 pt-40">
+
+                <div class="col-sm-6">
+                  <div class="text-20 fw-500 text-dark-1">مشهد</div>
+                  <div class="y-gap-10 pt-15">
+                    <a href="#" class="d-block">خیابان هفت تیر، خیابان دانشجو وی مجتمع صدف</a>
+                    <a href="#" class="d-block">05100000000</a>
+                    <a href="#" class="d-block">hi@example.com</a>
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <div class="text-20 fw-500 text-dark-1">تهران</div>
+                  <div class="y-gap-10 pt-15">
+                    <a href="#" class="d-block">خیابان ولیعصر، خیابان پارک وی مجتمع صدف</a>
+                    <a href="#" class="d-block">02188888888</a>
+                    <a href="#" class="d-block">hi@example.com</a>
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <div class="text-20 fw-500 text-dark-1">شاهرود</div>
+                  <div class="y-gap-10 pt-15">
+                    <a href="#" class="d-block">شاهرود، خیابان دانشگاه، پردیس مهندسی، خوابگاه بصیرت، طبقه سوم</a>
+                    <a href="#" class="d-block">02188888888</a>
+                    <a href="#" class="d-block">hi@example.com</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="px-40 py-40 bg-white border-light shadow-1 rounded-8 contact-form-to-top">
+                <h3 class="text-24 fw-500 ff-estedad">با ما در ارتباط باشید</h3>
+                <p class="mt-25">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با<br> و با استفاده از طراحان گرافیک است.</p>
+
+                <form class="contact-form row y-gap-30 pt-60 lg:pt-40" action="#">
+                  <div class="col-12">
+                    <label class="text-16 lh-1 fw-500 text-dark-1 mb-10">نام</label>
+                    <input type="text" name="title" placeholder="نام شما">
+                  </div>
+                  <div class="col-12">
+                    <label class="text-16 lh-1 fw-500 text-dark-1 mb-10">ایمیل</label>
+                    <input type="text" name="title" placeholder="ایمیل معتبر">
+                  </div>
+                  <div class="col-12">
+                    <label class="text-16 lh-1 fw-500 text-dark-1 mb-10">پیام</label>
+                    <textarea name="comment" placeholder="متن پیام" rows="8"></textarea>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" name="submit" id="submit" class="button -md -purple-1 text-white">
+                      ارسال
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="layout-pt-lg layout-pb-lg bg-light-4">
+                <div class="container">
+          <div class="row justify-center text-center">
+            <div class="col-xl-8 col-lg-9 col-md-11">
+
+              <div class="sectionTitle ">
+
+                <h2 class="sectionTitle__title ">سوالات متداول</h2>
+
+                <p class="sectionTitle__text ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+
+              </div>
+
+
+              <div class="accordion -block text-left pt-60 lg:pt-40 js-accordion">
+
+                <div class="accordion__item">
+                  <div class="accordion__button">
+                    <div class="accordion__icon">
+                      <div class="icon" data-feather="plus"></div>
+                      <div class="icon" data-feather="minus"></div>
+                    </div>
+                    <span class="text-16 fw-500 text-dark-1">آیا برای دانشجویان تخفیف قائل می شوید؟</span>
+                  </div>
+
+                  <div class="accordion__content">
+                    <div class="accordion__content__inner text-right">
+                      <p>چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion__item">
+                  <div class="accordion__button">
+                    <div class="accordion__icon">
+                      <div class="icon" data-feather="plus"></div>
+                      <div class="icon" data-feather="minus"></div>
+                    </div>
+                    <span class="text-16 fw-500 text-dark-1">آیا برای تیم های بزرگ قیمت خاصی ارائه می دهید؟</span>
+                  </div>
+
+                  <div class="accordion__content">
+                    <div class="accordion__content__inner text-right">
+                      <p>چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion__item">
+                  <div class="accordion__button">
+                    <div class="accordion__icon">
+                      <div class="icon" data-feather="plus"></div>
+                      <div class="icon" data-feather="minus"></div>
+                    </div>
+                    <span class="text-16 fw-500 text-dark-1">تجربه گذشته معلمان شما چیست؟</span>
+                  </div>
+
+                  <div class="accordion__content">
+                    <div class="accordion__content__inner text-right">
+                      <p>چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion__item">
+                  <div class="accordion__button">
+                    <div class="accordion__icon">
+                      <div class="icon" data-feather="plus"></div>
+                      <div class="icon" data-feather="minus"></div>
+                    </div>
+                    <span class="text-16 fw-500 text-dark-1">سیاست بازپرداخت دوره چیست؟</span>
+                  </div>
+
+                  <div class="accordion__content">
+                    <div class="accordion__content__inner text-right">
+                      <p>چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion__item">
+                  <div class="accordion__button">
+                    <div class="accordion__icon">
+                      <div class="icon" data-feather="plus"></div>
+                      <div class="icon" data-feather="minus"></div>
+                    </div>
+                    <span class="text-16 fw-500 text-dark-1">آیا برای غیر انتفاعی تخفیف می دهید؟</span>
+                  </div>
+
+                  <div class="accordion__content">
+                    <div class="accordion__content__inner text-right">
+                      <p>چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {% include "footer.html" %}
+
+
+    </div>
+  </main>
+
+  <!-- JavaScript -->
+  <script src="{% static 'vendor/leaflet/leaflet.js' %}"></script>
+  <script src="{% static 'js/vendors.js' %}"></script>
+  <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>

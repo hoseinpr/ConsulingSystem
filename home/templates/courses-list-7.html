@@ -1,0 +1,1221 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link rel="stylesheet" href="{% static 'css/all.min.css' %}"/>
+  <link rel="stylesheet" href="{% static 'vendor/leaflet/leaflet.css' %}"/>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="{% static 'css/vendors.css' %}">
+  <link rel="stylesheet" href="{% static 'css/main.css' %}">
+
+  <title>دوره های ما</title>
+</head>
+
+<body class="preloader-visible" data-barba="wrapper">
+  <!-- preloader start -->
+  <div class="preloader js-preloader">
+    <div class="preloader__bg"></div>
+  </div>
+  <!-- preloader end -->
+
+
+  <main class="main-content">
+
+    {% include "header.html" %}
+
+
+    <div class="content-wrapper  js-content-wrapper">
+
+
+      <section data-anim="fade" class="breadcrumbs ">
+        <div class="container">
+          <div class="row">
+            <div class="col-auto">
+              <div class="breadcrumbs__content">
+
+                <div class="breadcrumbs__item ">
+				<a href="#">صفحه اصلی</a>
+                </div>
+
+                <div class="breadcrumbs__item ">
+                  <a href="#">لیست دوره ها</a>
+                </div>
+
+                <div class="breadcrumbs__item ">
+                  <a href="#">برنامه نویسی</a>
+                </div>
+
+                <div class="breadcrumbs__item ">
+                  <a href="#">موبایل</a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="page-header -type-1">
+        <div class="container">
+          <div class="page-header__content">
+            <div class="row">
+              <div class="col-auto">
+                <div data-anim="slide-up delay-1">
+
+                  <h1 class="page-header__title ff-estedad">لیست دوره ها</h1>
+
+                </div>
+
+                <div data-anim="slide-up delay-2">
+
+                  <p class="page-header__text">با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="layout-pt-md layout-pb-md">
+        <div data-anim="slide-up delay-2" class="container">
+          <div class="accordion js-accordion">
+            <div class="accordion__item">
+              <div class="row y-gap-20 items-center justify-between pb-30">
+                <div class="col-auto">
+                  <div class="text-14 lh-12">نمایش <span class="text-dark-1 fw-500">250</span> نتیجه</div>
+                    </div>
+
+                    <div class="col-auto">
+                      <div class="row x-gap-20 y-gap-20">
+                        <div class="col-auto">
+                          <div class="d-flex items-center">
+                            <div class="text-14 lh-12 fw-500 text-dark-1 ml-20">مرتب سازی:</div>
+
+                            <div class="dropdown js-dropdown js-category-active">
+                              <div class="dropdown__button d-flex items-center text-14 rounded-8 px-20 py-10 text-14 lh-12" data-el-toggle=".js-category-toggle" data-el-toggle-active=".js-category-active">
+                                <span class="js-dropdown-title">ویژه</span>
+                                <i class="icon text-9 mr-40 icon-chevron-down"></i>
+                              </div>
+
+                              <div class="toggle-element -dropdown -dark-bg-dark-2 -dark-border-white-10 js-click-dropdown js-category-toggle">
+                                <div class="text-14 y-gap-15 js-dropdown-list">
+
+                                  <div><a href="#" class="d-block js-dropdown-link">انیمیشن</a></div>
+
+                                  <div><a href="#" class="d-block js-dropdown-link">وب</a></div>
+
+                                  <div><a href="#" class="d-block js-dropdown-link">
+								  گرافیک</a></div>
+
+                                  <div><a href="#" class="d-block js-dropdown-link">عکاسی</a></div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="col-auto">
+                      <div class="accordion__button w-unset">
+                        <button class="button h-50 px-30 -light-7 text-purple-1">
+                          <i class="icon-filter ml-10"></i>
+                          فیلتر
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion__content">
+                <div class="sidebar -courses px-30 py-30 rounded-8 bg-light-3 mb-50">
+                  <div class="row x-gap-60 y-gap-40">
+                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                      <div class="sidebar__item">
+                        <h5 class="sidebar__title">دسته بندی</h5>
+                            <div class="sidebar-checkbox">
+
+                              <div class="sidebar-checkbox__item">
+                                <div class="form-checkbox">
+                                  <input type="checkbox">
+                                  <div class="form-checkbox__mark">
+                                    <div class="form-checkbox__icon icon-check"></div>
+                                  </div>
+                                </div>
+
+                                <div class="sidebar-checkbox__title">هنر</div>
+                                <div class="sidebar-checkbox__count">(18)</div>
+                              </div>
+
+                              <div class="sidebar-checkbox__item">
+                                <div class="form-checkbox">
+                                  <input type="checkbox">
+                                  <div class="form-checkbox__mark">
+                                    <div class="form-checkbox__icon icon-check"></div>
+                                  </div>
+                                </div>
+
+                                <div class="sidebar-checkbox__title">ورزش</div>
+                                <div class="sidebar-checkbox__count">(12)</div>
+                              </div>
+
+                              <div class="sidebar-checkbox__item">
+                                <div class="form-checkbox">
+                                  <input type="checkbox">
+                                  <div class="form-checkbox__mark">
+                                    <div class="form-checkbox__icon icon-check"></div>
+                                  </div>
+                                </div>
+
+                                <div class="sidebar-checkbox__title">نرم افزار</div>
+                                <div class="sidebar-checkbox__count">(23)</div>
+                              </div>
+
+                              <div class="sidebar-checkbox__item">
+                                <div class="form-checkbox">
+                                  <input type="checkbox">
+                                  <div class="form-checkbox__mark">
+                                    <div class="form-checkbox__icon icon-check"></div>
+                                  </div>
+                                </div>
+
+                                <div class="sidebar-checkbox__title">موزیک</div>
+                                <div class="sidebar-checkbox__count">(67)</div>
+                              </div>
+
+                              <div class="sidebar-checkbox__item">
+                                <div class="form-checkbox">
+                                  <input type="checkbox">
+                                  <div class="form-checkbox__mark">
+                                    <div class="form-checkbox__icon icon-check"></div>
+                                  </div>
+                                </div>
+
+                                <div class="sidebar-checkbox__title">طراحی وب</div>
+                                <div class="sidebar-checkbox__count">(34)</div>
+                              </div>
+
+                              <div class="sidebar-checkbox__item">
+                                <div class="form-checkbox">
+                                  <input type="checkbox">
+                                  <div class="form-checkbox__mark">
+                                    <div class="form-checkbox__icon icon-check"></div>
+                                  </div>
+                                </div>
+
+                                <div class="sidebar-checkbox__title">عکاسی</div>
+                                <div class="sidebar-checkbox__count">(12)</div>
+                              </div>
+
+                            </div>
+                            <div class="sidebar__more mt-15">
+                              <a href="#" class="text-14 fw-500 underline text-purple-1">بیشتر</a>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                          <div class="sidebar__item">
+                            <h5 class="sidebar__title">امتیاز</h5>
+                            <div class="sidebar-checkbox">
+
+                              <div class="sidebar-checkbox__item">
+                                <div class="form-radio ml-10">
+                                  <div class="radio">
+                                    <input type="radio" name="radio" checked="checked">
+                                    <div class="radio__mark">
+                                      <div class="radio__icon"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="sidebar-checkbox__title d-flex items-center">
+                                  <div class="d-flex x-gap-5 pl-10">
+                                    <div class="icon-star text-11 text-yellow-1"></div>
+                                    <div class="icon-star text-11 text-yellow-1"></div>
+                                    <div class="icon-star text-11 text-yellow-1"></div>
+                                    <div class="icon-star text-11 text-yellow-1"></div>
+                                    <div class="icon-star text-11 text-yellow-1"></div>
+                                  </div>
+                                  4.5 به بالا
+                                </div>
+                                <div class="sidebar-checkbox__count">(1991)</div>
+                              </div>
+
+                              <div class="sidebar-checkbox__item">
+                                <div class="form-radio ml-10">
+                                  <div class="radio">
+                                    <input type="radio" name="radio" checked="checked">
+                                    <div class="radio__mark">
+                                      <div class="radio__icon"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="sidebar-checkbox__title d-flex items-center">
+                                  <div class="d-flex x-gap-5 pl-10">
+                                    <div class="icon-star text-11 text-yellow-1"></div>
+                                    <div class="icon-star text-11 text-yellow-1"></div>
+                                    <div class="icon-star text-11 text-yellow-1"></div>
+                                    <div class="icon-star text-11 text-yellow-1"></div>
+                                    <div class="icon-star text-11 text-yellow-1"></div>
+                                  </div>
+                                  4.0 به بالا
+                                </div>
+                                <div class="sidebar-checkbox__count">(200)</div>
+                              </div>
+
+                              <div class="sidebar-checkbox__item">
+                                <div class="form-radio ml-10">
+                                  <div class="radio">
+                                    <input type="radio" name="radio" checked="checked">
+                                    <div class="radio__mark">
+                                      <div class="radio__icon"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="sidebar-checkbox__title d-flex items-center">
+                                  <div class="d-flex x-gap-5 pl-10">
+                                    <div class="icon-star text-11 text-yellow-1"></div>
+                                    <div class="icon-star text-11 text-yellow-1"></div>
+                                    <div class="icon-star text-11 text-yellow-1"></div>
+                                    <div class="icon-star text-11 text-yellow-1"></div>
+                                    <div class="icon-star text-11 text-yellow-1"></div>
+                                  </div>
+                                  3.5 به بالا
+                                </div>
+                                <div class="sidebar-checkbox__count">(300)</div>
+                              </div>
+
+                              <div class="sidebar-checkbox__item">
+                                <div class="form-radio ml-10">
+                                  <div class="radio">
+                                    <input type="radio" name="radio" checked="checked">
+                                    <div class="radio__mark">
+                                      <div class="radio__icon"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="sidebar-checkbox__title d-flex items-center">
+                                  <div class="d-flex x-gap-5 pl-10">
+                                    <div class="icon-star text-11 text-yellow-1"></div>
+                                    <div class="icon-star text-11 text-yellow-1"></div>
+                                    <div class="icon-star text-11 text-yellow-1"></div>
+                                    <div class="icon-star text-11 text-yellow-1"></div>
+                                    <div class="icon-star text-11 text-yellow-1"></div>
+                                  </div>
+                                  3.0 به بالا
+                                </div>
+                                <div class="sidebar-checkbox__count">(500)</div>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                          <div class="sidebar__item">
+                            <h5 class="sidebar__title">مربیان</h5>
+                            <div class="sidebar-checkbox">
+
+                              <div class="sidebar-checkbox__item">
+                                <div class="form-checkbox">
+                                  <input type="checkbox">
+                                  <div class="form-checkbox__mark">
+                                    <div class="form-checkbox__icon icon-check"></div>
+                                  </div>
+                                </div>
+
+                                <div class="sidebar-checkbox__title">سارا علیپور</div>
+                                <div class="sidebar-checkbox__count">(18)</div>
+                              </div>
+
+                              <div class="sidebar-checkbox__item">
+                                <div class="form-checkbox">
+                                  <input type="checkbox">
+                                  <div class="form-checkbox__mark">
+                                    <div class="form-checkbox__icon icon-check"></div>
+                                  </div>
+                                </div>
+
+                                <div class="sidebar-checkbox__title">مینا ناصری</div>
+                                <div class="sidebar-checkbox__count">(12)</div>
+                              </div>
+
+                              <div class="sidebar-checkbox__item">
+                                <div class="form-checkbox">
+                                  <input type="checkbox">
+                                  <div class="form-checkbox__mark">
+                                    <div class="form-checkbox__icon icon-check"></div>
+                                  </div>
+                                </div>
+
+                                <div class="sidebar-checkbox__title">محمد افخمی</div>
+                                <div class="sidebar-checkbox__count">(23)</div>
+                              </div>
+
+                              <div class="sidebar-checkbox__item">
+                                <div class="form-checkbox">
+                                  <input type="checkbox">
+                                  <div class="form-checkbox__mark">
+                                    <div class="form-checkbox__icon icon-check"></div>
+                                  </div>
+                                </div>
+
+                                <div class="sidebar-checkbox__title">مهدی عظیمی</div>
+                                <div class="sidebar-checkbox__count">(67)</div>
+                              </div>
+
+                              <div class="sidebar-checkbox__item">
+                                <div class="form-checkbox">
+                                  <input type="checkbox">
+                                  <div class="form-checkbox__mark">
+                                    <div class="form-checkbox__icon icon-check"></div>
+                                  </div>
+                                </div>
+
+                                <div class="sidebar-checkbox__title">رامین اکبری</div>
+                                <div class="sidebar-checkbox__count">(34)</div>
+                              </div>
+
+                            </div>
+                            <div class="sidebar__more mt-15">
+                              <a href="#" class="text-14 fw-500 underline text-purple-1">بیشتر</a>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                          <div class="sidebar__item">
+                            <h5 class="sidebar__title">قیمت</h5>
+                            <div class="sidebar-checkbox">
+
+                              <div class="sidebar-checkbox__item">
+                                <div class="form-radio ml-10">
+                                  <div class="radio">
+                                    <input type="radio" name="radio-2" checked="checked">
+                                    <div class="radio__mark">
+                                      <div class="radio__icon"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="sidebar-checkbox__title">همه</div>
+                                <div class="sidebar-checkbox__count">(18)</div>
+                              </div>
+
+                              <div class="sidebar-checkbox__item">
+                                <div class="form-radio ml-10">
+                                  <div class="radio">
+                                    <input type="radio" name="radio-2" checked="checked">
+                                    <div class="radio__mark">
+                                      <div class="radio__icon"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="sidebar-checkbox__title">رایگان</div>
+                                <div class="sidebar-checkbox__count">(12)</div>
+                              </div>
+
+                              <div class="sidebar-checkbox__item">
+                                <div class="form-radio ml-10">
+                                  <div class="radio">
+                                    <input type="radio" name="radio-2" checked="checked">
+                                    <div class="radio__mark">
+                                      <div class="radio__icon"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="sidebar-checkbox__title">پولی</div>
+                                <div class="sidebar-checkbox__count">(23)</div>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                          <div class="sidebar__item">
+                            <h5 class="sidebar__title">سطح</h5>
+                            <div class="sidebar-checkbox">
+
+                              <div class="sidebar-checkbox__item">
+                                <div class="form-checkbox">
+                                  <input type="checkbox">
+                                  <div class="form-checkbox__mark">
+                                    <div class="form-checkbox__icon icon-check"></div>
+                                  </div>
+                                </div>
+
+                                <div class="sidebar-checkbox__title">همه سطح</div>
+                                <div class="sidebar-checkbox__count">(18)</div>
+                              </div>
+
+                              <div class="sidebar-checkbox__item">
+                                <div class="form-checkbox">
+                                  <input type="checkbox">
+                                  <div class="form-checkbox__mark">
+                                    <div class="form-checkbox__icon icon-check"></div>
+                                  </div>
+                                </div>
+
+                                <div class="sidebar-checkbox__title">مقدماتی</div>
+                                <div class="sidebar-checkbox__count">(12)</div>
+                              </div>
+
+                              <div class="sidebar-checkbox__item">
+                                <div class="form-checkbox">
+                                  <input type="checkbox">
+                                  <div class="form-checkbox__mark">
+                                    <div class="form-checkbox__icon icon-check"></div>
+                                  </div>
+                                </div>
+
+                                <div class="sidebar-checkbox__title">متوسطه</div>
+                                <div class="sidebar-checkbox__count">(23)</div>
+                              </div>
+
+                              <div class="sidebar-checkbox__item">
+                                <div class="form-checkbox">
+                                  <input type="checkbox">
+                                  <div class="form-checkbox__mark">
+                                    <div class="form-checkbox__icon icon-check"></div>
+                                  </div>
+                                </div>
+
+                                <div class="sidebar-checkbox__title">پیشرفته</div>
+                                <div class="sidebar-checkbox__count">(67)</div>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                          <div class="sidebar__item">
+                            <h5 class="sidebar__title">زبان</h5>
+                            <div class="sidebar-checkbox">
+
+                              <div class="sidebar-checkbox__item">
+                                <div class="form-checkbox">
+                                  <input type="checkbox">
+                                  <div class="form-checkbox__mark">
+                                    <div class="form-checkbox__icon icon-check"></div>
+                                  </div>
+                                </div>
+                                <div class="sidebar-checkbox__title">انگلیسی</div>
+                                <div class="sidebar-checkbox__count">(18)</div>
+                              </div>
+
+                              <div class="sidebar-checkbox__item">
+                                <div class="form-checkbox">
+                                  <input type="checkbox">
+                                  <div class="form-checkbox__mark">
+                                    <div class="form-checkbox__icon icon-check"></div>
+                                  </div>
+                                </div>
+                                <div class="sidebar-checkbox__title">فرانسوی</div>
+                                <div class="sidebar-checkbox__count">(12)</div>
+                              </div>
+
+                              <div class="sidebar-checkbox__item">
+                                <div class="form-checkbox">
+                                  <input type="checkbox">
+                                  <div class="form-checkbox__mark">
+                                    <div class="form-checkbox__icon icon-check"></div>
+                                  </div>
+                                </div>
+                                <div class="sidebar-checkbox__title">فارسی</div>
+                                <div class="sidebar-checkbox__count">(23)</div>
+                              </div>
+
+                              <div class="sidebar-checkbox__item">
+                                <div class="form-checkbox">
+                                  <input type="checkbox">
+                                  <div class="form-checkbox__mark">
+                                    <div class="form-checkbox__icon icon-check"></div>
+                                  </div>
+                                </div>
+                                <div class="sidebar-checkbox__title">آلمانی</div>
+                                <div class="sidebar-checkbox__count">(67)</div>
+                              </div>
+
+                              <div class="sidebar-checkbox__item">
+                                <div class="form-checkbox">
+                                  <input type="checkbox">
+                                  <div class="form-checkbox__mark">
+                                    <div class="form-checkbox__icon icon-check"></div>
+                                  </div>
+                                </div>
+                                <div class="sidebar-checkbox__title">ایتالیایی</div>
+                                <div class="sidebar-checkbox__count">(34)</div>
+                              </div>
+
+                            </div>
+                            <div class="sidebar__more mt-15">
+                              <a href="#" class="text-14 fw-500 underline text-purple-1">بیشتر</a>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                          <div class="sidebar__item">
+                            <h5 class="sidebar__title">مدت دوره</h5>
+                            <div class="sidebar-checkbox">
+
+                              <div class="sidebar-checkbox__item">
+                                <div class="form-checkbox">
+                                  <input type="checkbox">
+                                  <div class="form-checkbox__mark">
+                                    <div class="form-checkbox__icon icon-check"></div>
+                                  </div>
+                                </div>
+                                <div class="sidebar-checkbox__title">کمتر از 3 ساعت</div>
+                                <div class="sidebar-checkbox__count">(18)</div>
+                              </div>
+
+                              <div class="sidebar-checkbox__item">
+                                <div class="form-checkbox">
+                                  <input type="checkbox">
+                                  <div class="form-checkbox__mark">
+                                    <div class="form-checkbox__icon icon-check"></div>
+                                  </div>
+                                </div>
+                                <div class="sidebar-checkbox__title">4 - 7 ساعت</div>
+                                <div class="sidebar-checkbox__count">(12)</div>
+                              </div>
+
+                              <div class="sidebar-checkbox__item">
+                                <div class="form-checkbox">
+                                  <input type="checkbox">
+                                  <div class="form-checkbox__mark">
+                                    <div class="form-checkbox__icon icon-check"></div>
+                                  </div>
+                                </div>
+                                <div class="sidebar-checkbox__title">8 - 18 ساعت</div>
+                                <div class="sidebar-checkbox__count">(23)</div>
+                              </div>
+
+                              <div class="sidebar-checkbox__item">
+                                <div class="form-checkbox">
+                                  <input type="checkbox">
+                                  <div class="form-checkbox__mark">
+                                    <div class="form-checkbox__icon icon-check"></div>
+                                  </div>
+                                </div>
+                                <div class="sidebar-checkbox__title">بیشتر از 20 ساعت</div>
+                                <div class="sidebar-checkbox__count">(67)</div>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {% comment %} لیست دوره ها {% endcomment %}
+
+          <div class="row y-gap-60">
+          {% for course in courses_data %}
+            <div class="col-12 border-bottom-light">
+              <a href="#" class="coursesCard -type-1 row y-gap-20 flex-row items-center">
+                <div class="col-xl-3 col-lg-4">
+                  <div class="coursesCard__image rounded-8 relative">
+                    <img class="w-1/1 rounded-8" src="{% static 'img/coursesCards/1.png' %}" alt="image">
+                    <div class="coursesCard__image_overlay rounded-8"></div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="d-flex items-center">
+                    <div class="text-14 lh-1 text-yellow-1 ml-10">4.5</div>
+                    <div class="d-flex x-gap-5 items-center">
+                      <div class="icon-star text-9 text-yellow-1"></div>
+                      <div class="icon-star text-9 text-yellow-1"></div>
+                      <div class="icon-star text-9 text-yellow-1"></div>
+                      <div class="icon-star text-9 text-yellow-1"></div>
+                      <div class="icon-star text-9 text-yellow-1"></div>
+                    </div>
+                    <div class="text-13 lh-1 mr-10">(1991)</div>
+                  </div>
+
+                  
+
+                  <div class="col-xl-7 text-17 lh-15 fw-500 text-dark-1 mt-10">{{ course.Title }}</div>
+                  <div class="mt-8">{{ course.description }}</div>
+
+                  <div class="row x-gap-10 y-gap-10 items-center pt-10">
+                    <div class="col-auto">
+                      <div class="d-flex items-center">
+                        <img src="{% static 'img/general/avatar-1.png' %}" alt="image">
+                        <div class="mr-10">{{ course.Moshaver }}</div>
+                      </div>
+                    </div>
+
+                    <div class="col-auto">
+                      <div class="d-flex items-center">
+                        <img class="ml-8" src="{% static 'img/coursesCards/icons/1.svg' %}" alt="icon">
+                        <div class="text-14 lh-1">{{ course.Course_Number }} جلسه</div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="col-auto md:d-none">
+                  <div class="line -vertical -h-120 bg-light-5 ml-60 lg:ml-20 md:ml-0"></div>
+                </div>
+
+                <div class="col-md-auto">
+                  <div class="text-right md:text-left">
+                    <div class="text-15 lh-1 fw-500 line-through">179</div>
+                    <div class="text-24 lh-1 fw-500 text-dark-1 mt-10">{{ course.Price }}</div>
+                  </div>
+                  <div class="row x-gap-20 y-gap-20 items-center pt-25">
+                    <div class="col-auto">
+                      <button type="submit" class="button h-50 px-30 -purple-3 text-purple-1">افزودن به سبد</button>
+                   </div>
+                    <div class="col-auto">
+                      <button class="button size-50 rounded-full -purple-3 text-light-1">
+                        <div class="size-20" data-feather="heart"></div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          {% endfor %}
+{% comment %} 
+            <div class="col-12 border-bottom-light">
+              <a href="#" class="coursesCard -type-1 row y-gap-20 flex-row items-center">
+                <div class="col-xl-3 col-lg-4">
+                  <div class="coursesCard__image rounded-8 relative">
+                    <img class="w-1/1 rounded-8" src="img/coursesCards/2.png" alt="image">
+                    <div class="coursesCard__image_overlay rounded-8"></div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="d-flex items-center">
+                    <div class="text-14 lh-1 text-yellow-1 ml-10">4.5</div>
+                    <div class="d-flex x-gap-5 items-center">
+                      <div class="icon-star text-9 text-yellow-1"></div>
+                      <div class="icon-star text-9 text-yellow-1"></div>
+                      <div class="icon-star text-9 text-yellow-1"></div>
+                      <div class="icon-star text-9 text-yellow-1"></div>
+                      <div class="icon-star text-9 text-yellow-1"></div>
+                    </div>
+                    <div class="text-13 lh-1 mr-10">(1991)</div>
+                  </div>
+
+                  <div class="col-xl-7 text-17 lh-15 fw-500 text-dark-1 mt-10">آموزش Python</div>
+                  <div class="mt-8">دوره مقدماتی میزبانی وب، ثبت دامنه و نحوه انتشار و ویرایش وب سایت خود به صورت آنلاین.</div>
+
+                  <div class="row x-gap-10 y-gap-10 items-center pt-10">
+                    <div class="col-auto">
+                      <div class="d-flex items-center">
+                        <img src="img/general/avatar-1.png" alt="image">
+                        <div class="mr-10">علی صالحی</div>
+                      </div>
+                    </div>
+
+                    <div class="col-auto">
+                      <div class="d-flex items-center">
+                        <img class="ml-8" src="img/coursesCards/icons/1.svg" alt="icon">
+                        <div class="text-14 lh-1">6 دوره</div>
+                      </div>
+                    </div>
+
+                    <div class="col-auto">
+                      <div class="d-flex items-center">
+                        <img class="ml-8" src="img/coursesCards/icons/2.svg" alt="icon">
+                        <div class="text-14 lh-1">28دقیقه</div>
+                      </div>
+                    </div>
+
+                    <div class="col-auto">
+                      <div class="d-flex items-center">
+                        <img class="ml-8" src="img/coursesCards/icons/3.svg" alt="icon">
+                        <div class="text-14 lh-1">مقدماتی</div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="col-auto md:d-none">
+                  <div class="line -vertical -h-120 bg-light-5 ml-60 lg:ml-20 md:ml-0"></div>
+                </div>
+
+                <div class="col-md-auto">
+                  <div class="text-right md:text-left">
+                    <div class="text-15 lh-1 fw-500 line-through">179</div>
+                    <div class="text-24 lh-1 fw-500 text-dark-1 mt-10">279000 تومان</div>
+                  </div>
+                  <div class="row x-gap-20 y-gap-20 items-center pt-25">
+                    <div class="col-auto">
+                      <button class="button h-50 px-30 -purple-3 text-purple-1">افزودن به سبد</button>
+                    </div>
+                    <div class="col-auto">
+                      <button class="button size-50 rounded-full -purple-3 text-light-1">
+                        <div class="size-20" data-feather="heart"></div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-12 border-bottom-light">
+              <a href="#" class="coursesCard -type-1 row y-gap-20 flex-row items-center">
+                <div class="col-xl-3 col-lg-4">
+                  <div class="coursesCard__image rounded-8 relative">
+                    <img class="w-1/1 rounded-8" src="img/coursesCards/3.png" alt="image">
+                    <div class="coursesCard__image_overlay rounded-8"></div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="d-flex items-center">
+                    <div class="text-14 lh-1 text-yellow-1 ml-10">4.5</div>
+                    <div class="d-flex x-gap-5 items-center">
+                      <div class="icon-star text-9 text-yellow-1"></div>
+                      <div class="icon-star text-9 text-yellow-1"></div>
+                      <div class="icon-star text-9 text-yellow-1"></div>
+                      <div class="icon-star text-9 text-yellow-1"></div>
+                      <div class="icon-star text-9 text-yellow-1"></div>
+                    </div>
+                    <div class="text-13 lh-1 mr-10">(1991)</div>
+                  </div>
+
+                  <div class="col-xl-7 text-17 lh-15 fw-500 text-dark-1 mt-10">آموزش Angular</div>
+                  <div class="mt-8">دوره مقدماتی میزبانی وب، ثبت دامنه و نحوه انتشار و ویرایش وب سایت خود به صورت آنلاین.</div>
+
+                  <div class="row x-gap-10 y-gap-10 items-center pt-10">
+                    <div class="col-auto">
+                      <div class="d-flex items-center">
+                        <img src="img/general/avatar-1.png" alt="image">
+                        <div class="mr-10">علی صالحی</div>
+                      </div>
+                    </div>
+
+                    <div class="col-auto">
+                      <div class="d-flex items-center">
+                        <img class="ml-8" src="img/coursesCards/icons/1.svg" alt="icon">
+                        <div class="text-14 lh-1">6 دوره</div>
+                      </div>
+                    </div>
+
+                    <div class="col-auto">
+                      <div class="d-flex items-center">
+                        <img class="ml-8" src="img/coursesCards/icons/2.svg" alt="icon">
+                        <div class="text-14 lh-1">28دقیقه</div>
+                      </div>
+                    </div>
+
+                    <div class="col-auto">
+                      <div class="d-flex items-center">
+                        <img class="ml-8" src="img/coursesCards/icons/3.svg" alt="icon">
+                        <div class="text-14 lh-1">مقدماتی</div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="col-auto md:d-none">
+                  <div class="line -vertical -h-120 bg-light-5 ml-60 lg:ml-20 md:ml-0"></div>
+                </div>
+
+                <div class="col-md-auto">
+                  <div class="text-right md:text-left">
+                    <div class="text-15 lh-1 fw-500 line-through">179</div>
+                    <div class="text-24 lh-1 fw-500 text-dark-1 mt-10">279000 تومان</div>
+                  </div>
+                  <div class="row x-gap-20 y-gap-20 items-center pt-25">
+                    <div class="col-auto">
+                      <button class="button h-50 px-30 -purple-3 text-purple-1">افزودن به سبد</button>
+                    </div>
+                    <div class="col-auto">
+                      <button class="button size-50 rounded-full -purple-3 text-light-1">
+                        <div class="size-20" data-feather="heart"></div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-12 border-bottom-light">
+              <a href="#" class="coursesCard -type-1 row y-gap-20 flex-row items-center">
+                <div class="col-xl-3 col-lg-4">
+                  <div class="coursesCard__image rounded-8 relative">
+                    <img class="w-1/1 rounded-8" src="img/coursesCards/4.png" alt="image">
+                    <div class="coursesCard__image_overlay rounded-8"></div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="d-flex items-center">
+                    <div class="text-14 lh-1 text-yellow-1 ml-10">4.5</div>
+                    <div class="d-flex x-gap-5 items-center">
+                      <div class="icon-star text-9 text-yellow-1"></div>
+                      <div class="icon-star text-9 text-yellow-1"></div>
+                      <div class="icon-star text-9 text-yellow-1"></div>
+                      <div class="icon-star text-9 text-yellow-1"></div>
+                      <div class="icon-star text-9 text-yellow-1"></div>
+                    </div>
+                    <div class="text-13 lh-1 mr-10">(1991)</div>
+                  </div>
+
+                  <div class="col-xl-7 text-17 lh-15 fw-500 text-dark-1 mt-10">آموزش BootStrap</div>
+                  <div class="mt-8">دوره مقدماتی میزبانی وب، ثبت دامنه و نحوه انتشار و ویرایش وب سایت خود به صورت آنلاین.</div>
+
+                  <div class="row x-gap-10 y-gap-10 items-center pt-10">
+                    <div class="col-auto">
+                      <div class="d-flex items-center">
+                        <img src="img/general/avatar-1.png" alt="image">
+                        <div class="mr-10">علی صالحی</div>
+                      </div>
+                    </div>
+
+                    <div class="col-auto">
+                      <div class="d-flex items-center">
+                        <img class="ml-8" src="img/coursesCards/icons/1.svg" alt="icon">
+                        <div class="text-14 lh-1">6 دوره</div>
+                      </div>
+                    </div>
+
+                    <div class="col-auto">
+                      <div class="d-flex items-center">
+                        <img class="ml-8" src="img/coursesCards/icons/2.svg" alt="icon">
+                        <div class="text-14 lh-1">28دقیقه</div>
+                      </div>
+                    </div>
+
+                    <div class="col-auto">
+                      <div class="d-flex items-center">
+                        <img class="ml-8" src="img/coursesCards/icons/3.svg" alt="icon">
+                        <div class="text-14 lh-1">مقدماتی</div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="col-auto md:d-none">
+                  <div class="line -vertical -h-120 bg-light-5 ml-60 lg:ml-20 md:ml-0"></div>
+                </div>
+
+                <div class="col-md-auto">
+                  <div class="text-right md:text-left">
+                    <div class="text-15 lh-1 fw-500 line-through">179</div>
+                    <div class="text-24 lh-1 fw-500 text-dark-1 mt-10">279000 تومان</div>
+                  </div>
+                  <div class="row x-gap-20 y-gap-20 items-center pt-25">
+                    <div class="col-auto">
+                      <button class="button h-50 px-30 -purple-3 text-purple-1">افزودن به سبد</button>
+                    </div>
+                    <div class="col-auto">
+                      <button class="button size-50 rounded-full -purple-3 text-light-1">
+                        <div class="size-20" data-feather="heart"></div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-12 border-bottom-light">
+              <a href="#" class="coursesCard -type-1 row y-gap-20 flex-row items-center">
+                <div class="col-xl-3 col-lg-4">
+                  <div class="coursesCard__image rounded-8 relative">
+                    <img class="w-1/1 rounded-8" src="img/coursesCards/5.png" alt="image">
+                    <div class="coursesCard__image_overlay rounded-8"></div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="d-flex items-center">
+                    <div class="text-14 lh-1 text-yellow-1 ml-10">4.5</div>
+                    <div class="d-flex x-gap-5 items-center">
+                      <div class="icon-star text-9 text-yellow-1"></div>
+                      <div class="icon-star text-9 text-yellow-1"></div>
+                      <div class="icon-star text-9 text-yellow-1"></div>
+                      <div class="icon-star text-9 text-yellow-1"></div>
+                      <div class="icon-star text-9 text-yellow-1"></div>
+                    </div>
+                    <div class="text-13 lh-1 mr-10">(1991)</div>
+                  </div>
+
+                  <div class="col-xl-7 text-17 lh-15 fw-500 text-dark-1 mt-10">آموزش Photoshop</div>
+                  <div class="mt-8">دوره مقدماتی میزبانی وب، ثبت دامنه و نحوه انتشار و ویرایش وب سایت خود به صورت آنلاین.</div>
+
+                  <div class="row x-gap-10 y-gap-10 items-center pt-10">
+                    <div class="col-auto">
+                      <div class="d-flex items-center">
+                        <img src="img/general/avatar-1.png" alt="image">
+                        <div class="mr-10">علی صالحی</div>
+                      </div>
+                    </div>
+
+                    <div class="col-auto">
+                      <div class="d-flex items-center">
+                        <img class="ml-8" src="img/coursesCards/icons/1.svg" alt="icon">
+                        <div class="text-14 lh-1">6 دوره</div>
+                      </div>
+                    </div>
+
+                    <div class="col-auto">
+                      <div class="d-flex items-center">
+                        <img class="ml-8" src="img/coursesCards/icons/2.svg" alt="icon">
+                        <div class="text-14 lh-1">28دقیقه</div>
+                      </div>
+                    </div>
+
+                    <div class="col-auto">
+                      <div class="d-flex items-center">
+                        <img class="ml-8" src="img/coursesCards/icons/3.svg" alt="icon">
+                        <div class="text-14 lh-1">مقدماتی</div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="col-auto md:d-none">
+                  <div class="line -vertical -h-120 bg-light-5 ml-60 lg:ml-20 md:ml-0"></div>
+                </div>
+
+                <div class="col-md-auto">
+                  <div class="text-right md:text-left">
+                    <div class="text-15 lh-1 fw-500 line-through">179</div>
+                    <div class="text-24 lh-1 fw-500 text-dark-1 mt-10">279000 تومان</div>
+                  </div>
+                  <div class="row x-gap-20 y-gap-20 items-center pt-25">
+                    <div class="col-auto">
+                      <button class="button h-50 px-30 -purple-3 text-purple-1">افزودن به سبد</button>
+                    </div>
+                    <div class="col-auto">
+                      <button class="button size-50 rounded-full -purple-3 text-light-1">
+                        <div class="size-20" data-feather="heart"></div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-12 border-bottom-light">
+              <a href="#" class="coursesCard -type-1 row y-gap-20 flex-row items-center">
+                <div class="col-xl-3 col-lg-4">
+                  <div class="coursesCard__image rounded-8 relative">
+                    <img class="w-1/1 rounded-8" src="img/coursesCards/6.png" alt="image">
+                    <div class="coursesCard__image_overlay rounded-8"></div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="d-flex items-center">
+                    <div class="text-14 lh-1 text-yellow-1 ml-10">4.5</div>
+                    <div class="d-flex x-gap-5 items-center">
+                      <div class="icon-star text-9 text-yellow-1"></div>
+                      <div class="icon-star text-9 text-yellow-1"></div>
+                      <div class="icon-star text-9 text-yellow-1"></div>
+                      <div class="icon-star text-9 text-yellow-1"></div>
+                      <div class="icon-star text-9 text-yellow-1"></div>
+                    </div>
+                    <div class="text-13 lh-1 mr-10">(1991)</div>
+                  </div>
+
+                  <div class="col-xl-7 text-17 lh-15 fw-500 text-dark-1 mt-10">آموزش JavaScript</div>
+                  <div class="mt-8">دوره مقدماتی میزبانی وب، ثبت دامنه و نحوه انتشار و ویرایش وب سایت خود به صورت آنلاین.</div>
+
+                  <div class="row x-gap-10 y-gap-10 items-center pt-10">
+                    <div class="col-auto">
+                      <div class="d-flex items-center">
+                        <img src="img/general/avatar-1.png" alt="image">
+                        <div class="mr-10">علی صالحی</div>
+                      </div>
+                    </div>
+
+                    <div class="col-auto">
+                      <div class="d-flex items-center">
+                        <img class="ml-8" src="img/coursesCards/icons/1.svg" alt="icon">
+                        <div class="text-14 lh-1">6 دوره</div>
+                      </div>
+                    </div>
+
+                    <div class="col-auto">
+                      <div class="d-flex items-center">
+                        <img class="ml-8" src="img/coursesCards/icons/2.svg" alt="icon">
+                        <div class="text-14 lh-1">28دقیقه</div>
+                      </div>
+                    </div>
+
+                    <div class="col-auto">
+                      <div class="d-flex items-center">
+                        <img class="ml-8" src="img/coursesCards/icons/3.svg" alt="icon">
+                        <div class="text-14 lh-1">مقدماتی</div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="col-auto md:d-none">
+                  <div class="line -vertical -h-120 bg-light-5 ml-60 lg:ml-20 md:ml-0"></div>
+                </div>
+
+                <div class="col-md-auto">
+                  <div class="text-right md:text-left">
+                    <div class="text-15 lh-1 fw-500 line-through">179</div>
+                    <div class="text-24 lh-1 fw-500 text-dark-1 mt-10">279000 تومان</div>
+                  </div>
+                  <div class="row x-gap-20 y-gap-20 items-center pt-25">
+                    <div class="col-auto">
+                      <button class="button h-50 px-30 -purple-3 text-purple-1">افزودن به سبد</button>
+                    </div>
+                    <div class="col-auto">
+                      <button class="button size-50 rounded-full -purple-3 text-light-1">
+                        <div class="size-20" data-feather="heart"></div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-12 border-bottom-light">
+              <a href="#" class="coursesCard -type-1 row y-gap-20 flex-row items-center">
+                <div class="col-xl-3 col-lg-4">
+                  <div class="coursesCard__image rounded-8 relative">
+                    <img class="w-1/1 rounded-8" src="img/coursesCards/7.png" alt="image">
+                    <div class="coursesCard__image_overlay rounded-8"></div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="d-flex items-center">
+                    <div class="text-14 lh-1 text-yellow-1 ml-10">4.5</div>
+                    <div class="d-flex x-gap-5 items-center">
+                      <div class="icon-star text-9 text-yellow-1"></div>
+                      <div class="icon-star text-9 text-yellow-1"></div>
+                      <div class="icon-star text-9 text-yellow-1"></div>
+                      <div class="icon-star text-9 text-yellow-1"></div>
+                      <div class="icon-star text-9 text-yellow-1"></div>
+                    </div>
+                    <div class="text-13 lh-1 mr-10">(1991)</div>
+                  </div>
+
+                  <div class="col-xl-7 text-17 lh-15 fw-500 text-dark-1 mt-10">آموزش Invision</div>
+                  <div class="mt-8">دوره مقدماتی میزبانی وب، ثبت دامنه و نحوه انتشار و ویرایش وب سایت خود به صورت آنلاین.</div>
+
+                  <div class="row x-gap-10 y-gap-10 items-center pt-10">
+                    <div class="col-auto">
+                      <div class="d-flex items-center">
+                        <img src="img/general/avatar-1.png" alt="image">
+                        <div class="mr-10">علی صالحی</div>
+                      </div>
+                    </div>
+
+                    <div class="col-auto">
+                      <div class="d-flex items-center">
+                        <img class="ml-8" src="img/coursesCards/icons/1.svg" alt="icon">
+                        <div class="text-14 lh-1">6 دوره</div>
+                      </div>
+                    </div>
+
+                    <div class="col-auto">
+                      <div class="d-flex items-center">
+                        <img class="ml-8" src="img/coursesCards/icons/2.svg" alt="icon">
+                        <div class="text-14 lh-1">28دقیقه</div>
+                      </div>
+                    </div>
+
+                    <div class="col-auto">
+                      <div class="d-flex items-center">
+                        <img class="ml-8" src="img/coursesCards/icons/3.svg" alt="icon">
+                        <div class="text-14 lh-1">مقدماتی</div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="col-auto md:d-none">
+                  <div class="line -vertical -h-120 bg-light-5 ml-60 lg:ml-20 md:ml-0"></div>
+                </div>
+
+                <div class="col-md-auto">
+                  <div class="text-right md:text-left">
+                    <div class="text-15 lh-1 fw-500 line-through">179</div>
+                    <div class="text-24 lh-1 fw-500 text-dark-1 mt-10">279000 تومان</div>
+                  </div>
+                  <div class="row x-gap-20 y-gap-20 items-center pt-25">
+                    <div class="col-auto">
+                      <button class="button h-50 px-30 -purple-3 text-purple-1">افزودن به سبد</button>
+                    </div>
+                    <div class="col-auto">
+                      <button class="button size-50 rounded-full -purple-3 text-light-1">
+                        <div class="size-20" data-feather="heart"></div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+          </div> {% endcomment %}
+          {% comment %} اتمام لیست دوره ها {% endcomment %}
+
+          <div class="row justify-center pt-90 lg:pt-50">
+            <div class="col-auto">
+              <div class="pagination -buttons">
+                <button class="pagination__button -prev">
+                  <i class="icon icon-chevron-right"></i>
+                </button>
+
+                <div class="pagination__count">
+                  <a href="#">1</a>
+                  <a class="-count-is-active" href="#">2</a>
+                  <a href="#">3</a>
+                  <span>...</span>
+                  <a href="#">67</a>
+                </div>
+
+                <button class="pagination__button -next">
+                  <i class="icon icon-chevron-left"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      {% include "footer.html" %}
+
+
+    </div>
+  </main>
+
+  <!-- JavaScript -->
+  <script src="{% static 'vendor/leaflet/leaflet.js' %}"></script>
+  <script src="{% static 'js/vendors.js' %}"></script>
+  <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>

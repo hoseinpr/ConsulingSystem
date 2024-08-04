@@ -1,0 +1,313 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="{% static 'css/base.min.css' %}"/>
+  <link rel="stylesheet" href="{% static 'css/choices.min.css' %}"/>
+  <link rel="stylesheet" href="{% static 'css/all.min.css' %}"/>
+  <link rel="stylesheet" href="{% static 'vendor/leaflet/leaflet.css' %}"/>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="{% static 'css/vendors.css' %}">
+  <link rel="stylesheet" href="{% static 'css/main.css' %}">
+
+  <title>Educrat - قالب HTML دوره آنلاین و آموزش اِدُکرات</title>
+</head>
+
+<body class="preloader-visible" data-barba="wrapper">
+  <!-- preloader start -->
+  <div class="preloader js-preloader">
+    <div class="preloader__bg"></div>
+  </div>
+  <!-- preloader end -->
+
+
+  <main class="main-content">
+
+    {% include "header.html" %}
+
+
+    <div class="content-wrapper  js-content-wrapper">
+
+
+      <section data-anim="fade" class="breadcrumbs ">
+        <div class="container">
+          <div class="row">
+            <div class="col-auto">
+              <div class="breadcrumbs__content">
+
+                <div class="breadcrumbs__item ">
+                  <a href="#">صفحه اصلی</a>
+                </div>
+
+                <div class="breadcrumbs__item ">
+                  <a href="#">سایر</a>
+                </div>
+
+                <div class="breadcrumbs__item ">
+                  <a href="#">فروشگاه</a>
+                </div>
+
+                <div class="breadcrumbs__item ">
+                  <a href="#">پراخت موفق</a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="page-header -type-1">
+        <div class="container">
+          <div class="page-header__content">
+            <div class="row justify-center text-center">
+              <div class="col-auto">
+                <div data-anim="slide-up delay-1">
+
+                  <h1 class="page-header__title">پرداخت موفق</h1>
+
+                </div>
+
+                <div data-anim="slide-up delay-2">
+
+                  <p class="page-header__text">ما ماموریت داریم دوره‌های جذاب و مدیریت‌شده را با قیمتی مناسب ارائه دهیم.</p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="layout-pt-md layout-pb-lg">
+        <div class="container">
+          <div class="row no-gutters justify-content-center">
+            <div class="col-xl-8 col-lg-9 col-md-11">
+              <div class="shopCompleted-header">
+                <div class="icon">
+                  <i data-feather="check"></i>
+                </div>
+                <h2 class="title">
+                  تکمیل سفارش
+                </h2>
+                <div class="subtitle">
+                  از خرید شما متشکریم، سفارش شما با موفقیت ثبت گردید.
+                </div>
+              </div>
+
+              <div class="shopCompleted-info">
+                <div class="row no-gutters y-gap-32">
+                  <div class="col-md-3 col-sm-6">
+                    <div class="shopCompleted-info__item">
+                      <div class="subtitle">شماره سفارش</div>
+                      <div class="title text-purple-1 mt-5">13119</div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3 col-sm-6">
+                    <div class="shopCompleted-info__item">
+                      <div class="subtitle">تاریخ</div>
+                      <div class="title text-purple-1 mt-5">13401/12/12</div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3 col-sm-6">
+                    <div class="shopCompleted-info__item">
+                      <div class="subtitle">مبلغ نهایی</div>
+                      <div class="title text-purple-1 mt-5">9,21800 تومان</div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3 col-sm-6">
+                    <div class="shopCompleted-info__item">
+                      <div class="subtitle">روش پرداخت</div>
+                      <div class="title text-purple-1 mt-5">درگاه بانک سامان</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="shopCompleted-footer bg-light-4 border-light rounded-8">
+                <div class="shopCompleted-footer__wrap">
+                  <h5 class="title">
+                    جزئیات سفارش
+                  </h5>
+
+                  <div class="item">
+                    <span class="fw-500">نام کالا</span>
+                    <span class="fw-500">مبلغ</span>
+                  </div>
+
+                  <div class="item">
+                    <span class="">آموزش صفر تا صد ReactJs</span>
+                    <span class="">59000 تومان</span>
+                  </div>
+
+                  <div class="item -border-none">
+                    <span class="">دوره آموزش جامع NodeJs1</span>
+                    <span class="">670000 تومان</span>
+                  </div>
+
+                  <div class="item -border-none">
+                    <span class="fw-500">جمع کل</span>
+                    <span class="fw-500">178000 تومان</span>
+                  </div>
+
+                  <div class="item">
+                    <span class="fw-500">هزینه ارسال</span>
+                    <span class="fw-500">25000 تومان</span>
+                  </div>
+
+                  <div class="item">
+                    <span class="fw-500">مبلغ نهایی</span>
+                    <span class="fw-500">9,21800 تومان</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+       <footer class="footer -type-1 bg-dark-1 -green-links">
+        <div class="container">
+          <div class="footer-header">
+            <div class="row y-gap-20 justify-between items-center">
+              <div class="col-auto">
+                <div class="footer-header__logo">
+                  <img src="img/footer/footer-logo.svg" alt="logo">
+                </div>
+              </div>
+              <div class="col-auto">
+                <div class="footer-header-socials">
+                  <div class="footer-header-socials__title text-white">ما را در شبکه های اجتماعی دنبال کنید</div>
+                  <div class="footer-header-socials__list">
+                    <a href="#"><i class="icon-facebook"></i></a>
+                    <a href="#"><i class="icon-twitter"></i></a>
+                    <a href="#"><i class="icon-instagram"></i></a>
+                    <a href="#"><i class="icon-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-columns">
+            <div class="row y-gap-30">
+              <div class="col-xl-2 col-lg-4 col-md-6">
+                <div class="text-17 fw-500 text-white uppercase mb-25">درباره ما</div>
+                <div class="d-flex y-gap-10 flex-column">
+                  <a href="about-1.html">درباره ما</a>
+                  <a href="blog-list-1.html">لیست وبلاگ</a>
+                  <a href="instructor-become.html">مدرس شوید</a>
+                  <a href="blog-list-1.html">لیست وبلاگ</a>
+                  <a href="#">بازگشت وجه</a>
+                  <a href="contact-1.html">تماس با ما</a>
+                </div>
+              </div>
+
+              <div class="col-xl-4 col-lg-8">
+                <div class="text-17 fw-500 text-white uppercase mb-25">دسته بندی ها</div>
+                <div class="row justify-between y-gap-20">
+                  <div class="col-md-6">
+                    <div class="d-flex y-gap-10 flex-column">
+                      <a href="courses-single-1.html">برنامه نویسی</a>
+                      <a href="courses-single-2.html">طراحی وب</a>
+                      <a href="courses-single-3.html">مالی و حسابداری</a>
+                      <a href="courses-single-4.html">فناوری اطلاعات</a>
+                      <a href="courses-single-5.html">هوش مصنوعی</a>
+                      <a href="courses-single-6.html">رباتیک</a>
+                      <a href="courses-single-1.html">بازاریابی</a>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="d-flex y-gap-10 flex-column">
+                      <a href="courses-single-1.html">مدیریت پروژه</a>
+                      <a href="courses-single-2.html">طراحی گرافیک</a>
+                      <a href="courses-single-3.html">نرم افزار</a>
+                      <a href="courses-single-4.html">عکاسی</a>
+                      <a href="courses-single-5.html">بانک های اطلاعاتی</a>
+                      <a href="courses-single-6.html">بهینه سازی وب</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-2 offset-xl-1 col-lg-4 col-md-6">
+                <div class="text-17 fw-500 text-white uppercase mb-25">پشتیبانی</div>
+                <div class="d-flex y-gap-10 flex-column">
+                  <a href="terms.html">المان های کاربردی</a>
+                  <a href="help-center.html">سوالات متداول</a>
+                  <a href="dashboard.html">داشبورد</a>
+                  <a href="contact-1.html">تماس با ما</a>
+                </div>
+              </div>
+
+              <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="text-17 fw-500 text-white uppercase mb-25">در تماس باشید</div>
+                <div class="footer-columns-form">
+                  <div>ما اسپم نمی فرستیم پس نگران نباشید.</div>
+                  <form action="">
+                    <div class="form-group">
+                      <input type="text" placeholder="ایمیل شما...">
+                      <button type="submit">ارسال</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="py-30 border-top-light-15">
+            <div class="row justify-between items-center y-gap-20">
+              <div class="col-auto">
+                <div class="d-flex items-center h-100 text-white">
+                  © 2022 کلیه حقوق این قالب متعلق به گروه توسعه پردازان می باشد.
+                </div>
+              </div>
+
+              <div class="col-auto">
+                <div class="d-flex x-gap-20 y-gap-20 items-center flex-wrap">
+                  <div>
+                    <div class="d-flex x-gap-15 text-white">
+                      <a href="help-center.html">پشتیبانی</a>
+                      <a href="terms.html">شرایط</a>
+                      <a href="terms.html">امنیت</a>
+                      <a href="terms.html">حریم خصوصی</a>
+                      <a href="terms.html">ضوابط</a>
+                    </div>
+                  </div>
+
+                  <div>
+                    <a href="#" class="button px-30 h-50 -dark-6 rounded-200 text-white">
+                      <i class="icon-worldwide text-20 ml-15"></i><span class="text-15">فارسی</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+    </div>
+  </main>
+
+  <!-- JavaScript -->
+  <script src="{% static 'vendor/leaflet/leaflet.js' %}"></script>
+  <script src="{% static 'js/vendors.js' %}"></script>
+  <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>
